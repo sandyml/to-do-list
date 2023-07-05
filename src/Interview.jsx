@@ -29,9 +29,12 @@ export const Counter = () => {
   <div>
    <h1>Counter: {count}</h1>
    <div>
-    <button onClick={timeIncrement}>increment</button>
+    <button onClick={() => setCount(count + 1))}>increment</button>
+    <button onClick={() => setCount(0)}>reset</button>
+    <button onClick={() => setCount(count - 1)}>decrement</button>
+    {/* <button onClick={timeIncrement}>increment</button>
     <button onClick={timeReset}>reset</button>
-    <button onClick={timeDecrement}>decrement</button>
+    <button onClick={timeDecrement}>decrement</button> */}
    </div>
   </div> 
  )
